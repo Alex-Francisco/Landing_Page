@@ -90,5 +90,52 @@ header ul li a {
 }
 
 .content .caixa-texto a {
-    
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #fff;
+    color: #111;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .caixa-img {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .caixa-img img {
+    max-width: 260px;
+}
+
+
+/* Miniaturas */
+.miniaturas {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.miniaturas li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.miniaturas li:hover {
+    transform: translateY(-15px);
+}
+
+.miniaturas li img {
+    max-width: 40px;
 }
