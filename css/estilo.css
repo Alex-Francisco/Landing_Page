@@ -58,3 +58,37 @@ header ul li a {
     text-decoration: none;
 }
 
+
+/* Content */
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .caixa-texto {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .caixa-texto h2 {
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .caixa-texto h2 span {
+    font-size: 2em;
+}
+
+.content .caixa-texto p {
+    color: #fff;
+}
+
+.content .caixa-texto a {
+    
+}
