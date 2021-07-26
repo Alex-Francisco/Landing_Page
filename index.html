@@ -22,7 +22,7 @@
 
         <div class="content">
             <div class="caixa-texto">
-                <h2>Isso é o que<br><span>Eu gosto</span></h2>
+                <h2>O que eu quero é<br><span>pepsi</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure enim animi consectetur odio ea quo? Rem consequuntur vel inventore odit dignissimos tempore natus nostrum, magni animi obcaecati molestias voluptate quis!</p>
                 <a href="#">Ver todos os produtos</a>
             </div>
@@ -31,10 +31,26 @@
             </div>
         </div>
         <ul class="miniaturas">
-            <li><img src="imagens/pepsi001.png" alt="lata azul"></li>
-            <li><img src="imagens/pepsi002.png" alt="lata cinza"></li>
-            <li><img src="imagens/pepsi003.png" alt="lata preta"></li>
+            <li><img src="imagens/pepsi001.png" alt="lata azul" onclick="imgRotativa('imagens/pepsi001.png');trocaCorFundo('#0062be')"></li>
+            <li><img src="imagens/pepsi002.png" alt="lata cinza" onclick="imgRotativa('imagens/pepsi002.png');trocaCorFundo('#e60c2c')"></li>
+            <li><img src="imagens/pepsi003.png" alt="lata preta" onclick="imgRotativa('imagens/pepsi003.png');trocaCorFundo('#1e1e1e')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="imagens/twitter.png" alt="Twitter"></a></li>
         </ul>
     </section>
+    <script type="text/javascript">
+        function imgRotativa(img){
+            document.querySelector('.pepsi').src = img;
+        }
+
+        function trocaCorFundo(cor) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = cor;
+
+        }
+    </script>
 </body>
 </html>
